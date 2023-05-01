@@ -1,6 +1,6 @@
 function block1_scroll_animation()
 {
-	if(window.innerHeight*1.1 <= window.scrollY)
+	if(window.innerHeight*1.3 <= window.scrollY)
 	{
 		document.getElementById("content1").style.backgroundColor="white";
 		document.getElementById("content1").style.transform="scale(500%)";
