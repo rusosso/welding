@@ -118,7 +118,6 @@ nav
 	margin-top:-80px;
 	overflow:hidden;
 	z-index:1;
-	transition:all 0.2s;
 }
 
 #block1_shadow
@@ -129,6 +128,7 @@ nav
 	width:100vw;
 	background-color: white;
 	background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 80%);
+	transition:all 0.2s;
 }
 
 .content1
