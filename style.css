@@ -29,10 +29,12 @@ header
 	align-items: bottom;
 	height:80px;
 	width:100%;
+	background-color:var(--bg);
 	border-left:10px solid var(--font);
-	z-index:10;
 	box-sizing:border-box;
 	overflow:hidden;
+	transition:all 0.2s;
+	z-index:10;
 }
 
 
@@ -41,18 +43,19 @@ header
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	background-image:url("img/logo1.png");
+	background-image:url("img/logo2.png");
 	background-size:80px;
 	background-position:left;
 	background-repeat:no-repeat;
-	font-size:100px;
+	font-size:5vw;
 	color:var(--font);
 	text-decoration:none;
-	width:30%;
+	width:40vw;
 	height:100%;
 	padding-left:70px;
-	transition:all 0.2s;
 	animation:appear_right .2s linear;
+	transition:all 0.2s;
+	transform:translateX(-10vw)
 }
 
 #logo:hover
@@ -77,23 +80,23 @@ nav
 
 #seperate
 {
-	width:10%;
+	width:0vw;
 }
 
 #nav_block1,#nav_block2
 {
 	text-decoration:none;
 	text-align:center;
-	color:var(--bg);
+	color:var(--font);
 	height:100%;
-	width:200px;
-	font-size:40px;
+	width:20vw;
+	font-size:2vw;
 	margin:0px 30px;
 	border-bottom:10px solid var(--font);
 	padding:10px 0px;
 	box-sizing:border-box;
-	transition:all 0.2s;
 	animation:appear_left .2s linear;
+	transition:all 0.2s;
 }
 
 #nav_block1:hover,#nav_block2:hover
@@ -105,93 +108,47 @@ nav
 
 #block1
 {
-	position:fixed;
-	top:0;
+	position:relative;
+	top:0px;
 	display:flex;
-	background-color:var(--font);
-	background-image:url(img/bg.gif);
-	background-size:cover;
-	background-position:top center;
+	flex-direction:column;
+	background-color:black;
 	width:100%;
-	height:100vh;
-	margin-top:0px;
+	height:250vh;
+	margin-top:-80px;
 	overflow:hidden;
 	z-index:1;
 	transition:all 0.2s;
 }
 
+#block1_shadow
+{
+	position:fixed;
+	top:0px;
+	height:100vh;
+	width:100vw;
+	background-color: white;
+	background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 80%);
+}
+
 .content1
 {
-	text-align:center;
-	width:45%;
-	height:100%;
-	margin-top:150px;
-	animation:appear_right .2s linear;
-}
-
-.content1 > p:nth-child(1)
-{
-	position:relative;
-	font-size:100px;
-	font-weight:700;
-	color:var(--bg);
-	margin-top:100px;
-	margin-left:20px;
-	text-shadow:0 0 15px black;
-	
-}
-
-.content1 > p:nth-child(1)::after
-{
-	content:"";
-	top:10px;
-	left:-30px;
-	position:absolute;
-	background-color:var(--font);
-	width:40px;
-	height:100px;
-}
-
-.content1 > p:nth-child(2)
-{
-	font-size:40px;
-	color:var(--bg);
-	margin:0px;
-	text-shadow:0 0 15px black;
-}
-.content_next_to1
-{
-	width:55%;
-	height:100%;
-	margin-top:0px;
-	animation:appear_right .2s linear;
-}
-
-.image
-{
-	position:relative;
-	top:0;
-	background-image:url(img/welding2.png);
-	background-size:cover;
-	background-repeat:no-repeat;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:white;
+	font-size:6vw;
 	width:100%;
-	height:100%;
+	height:50vh;
+	overflow:hidden;
+	transition:all 0.3s;
 }
 
-.image::after
+.content1:nth-child(2)
 {
-	content:"";
-	position:absolute;
-	top:820px;
-	left:580px;
-	background-color:white;
-	width:10px;
-	height:10px;
-	border-radius:100px;
-	box-shadow:0 0 300px 300px rgba(255,255,255);
-	animation:light_animation 0.01s;
-	animation-iteration-count:infinite;
+	margin-top:25vh;
 }
+
 
 .blank_block
 {
@@ -204,7 +161,7 @@ nav
 {
 	background-color:var(--bg);
 	height:80px;
-	margin-top:900px;
+	margin-top:-160px;
 	transition:all .3s;
 }
 
@@ -241,16 +198,15 @@ nav
 #block2
 {
 	position:sticky;
-	top:80px;
+	top:79px;
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	background-color:white;
 	width:100%;
-	height:calc(100vh - 80px);
+	height:100vh;
 	overflow:hidden;
 	transition:all .3s;
-	box-shadow:0 0 30px 30px rgba(0,0,0,0.5);
 	z-index:2;
 }
 
@@ -355,7 +311,6 @@ nav
 	background:url(img/profil_1.png);
 	background-size:50%;
 	display:flex;
-	justify-content:right;
 	height:calc(100vh - 80px);
 	overflow:hidden;
 	box-shadow:0 0 30px 30px rgba(0,0,0,0.5);
@@ -364,43 +319,15 @@ nav
 
 .content_next_to3
 {
-	width:35%;
+	width:0%;
 }
-
-.content_next_to3 > div
-{
-	font-size:30px;
-	text-align:center;
-	color:var(--bg);
-	width:600px;
-	height:300px;
-	margin-top:250px;
-	border-radius:30px;
-	padding:20px;
-	transform:rotate(0deg);
-}
-
-.content_next_to3 > div > i
-{
-	position:absolute;
-	top:-100px;
-	left:260px;
-	font-size:100px;
-}
-.content_next_to3 > div > h1
-{
-	border-left:10px solid var(--font);
-}
-
 
 .content3
 {
 	background-color:#EEEEEE;
-	width:70%;
-	height:160%;
-	margin:-150px -100px 0 0;
+	width:100vw;
+	height:100vh;
 	box-shadow:0 0 30px 30px rgba(0,0,0,.5);
-	transform:rotate(15deg);
 	overflow:hidden;
 
 }
@@ -408,30 +335,17 @@ nav
 #table
 {
 	position:relative;
-	left:-10%;
+	top:-500px;
+	left:470px;
 	background-color:var(--bg);
 	box-shadow:0 0 10px 10px rgba(0,0,0,.2);
-	width:2000px;
-	height:1600px;
-	transform:rotate(-15deg);
-	transition:all .7s ease;
+	box-sizing:border-box;
+	width:100vh;
+	height:100vw;
+	transition:all 1.5s ease;
 	transform-style:preserve-3d;
-}
-
-
-
-#table::before
-{
-	content:"Zapraszam do kontaktu";
-	position:absolute;
-	top:100px;
-	left:230px;
-	width:100%;
-	height:10%;
-	color:var(--font);
-	font-size:80px;
-	transform:translatez(-400px) translatey(-600px) rotatex(-35deg);
-	transform-style:preserve-3d;
+	/*transform:rotatex(50deg) rotate(40deg) translatez(500px) scale(100%);*/
+	transform:scale(50%) rotate(-90deg);
 }
 
 .cards_seperate
@@ -439,19 +353,11 @@ nav
 	position:absolute;
 	top:0;
 	width:650px;
-	height:230px;
-	margin-top:400px;
-	margin-left:400px;
-	transform:rotate(-70deg) translatez(220px);
+	height:100px;
+	margin-top:40vh;
+	margin-left:20vw;
+	transform:rotate(-70deg) translatez(100px);
 	transform-style:preserve-3d;
-}
-
-.phone_container1
-{
-	margin-top:0;
-	margin-left:0;
-	transform:rotate(0deg);
-	perspective:10000px;
 }
 
 .phone_inside,.phone_back,.phone_front,.phone_top,.phone_bottom,.phone_right,.phone_left
@@ -492,16 +398,36 @@ nav
 
 .phone_inside
 {
-	margin-top:400px;
-	margin-left:150px;
-	transform:rotatex(180deg) rotate(70deg) translatez(-200px);
+	margin-top:20vw;
+	margin-left:15vh;
+	transform:rotatex(180deg) translatez(-200px);
 }
 
 .mail_inside
 {
-	margin-top:450px;
-	margin-left:650px;
-	transform:rotatex(0deg) rotate(-70deg) translatez(200px);
+	margin-top:70vw;
+	margin-left:15vh;
+	transform:rotatex(0deg) translatez(200px);
+}
+
+.phone_inside:hover
+{
+	transform:scale(102%) rotatex(190deg) rotate(70deg) translatez(-200px);
+}
+
+.mail_inside:hover
+{
+	transform:scale(102%) rotatex(10deg) rotate(-70deg) translatez(200px);
+}
+
+.phone_inside:active
+{
+	transform:scale(115%) translatey(200px) translatex(100px) translatez(500px) rotate(90deg);
+}
+
+.mail_inside:active
+{
+	transform:scale(115%) translatey(400px) translatex(-200px) translatez(1000px) rotatex(-40deg);
 }
 
 .phone_inside::before,.mail_inside::before
@@ -536,32 +462,17 @@ nav
 {
 	transform:scale(102%)  translatez(-20px);
 }
+.phone_inside:hover:before,.mail_inside:hover:before
+{
+	background-color:rgba(0,0,0,0.22);
+	box-shadow:0 0 30px 10px rgba(0,0,0,.3);
+}
 
 .phone_inside:active:before,.mail_inside:active:before
 {
-	background-color:rgba(0,0,0,0.3);
-	box-shadow:0 0 10px 10px rgba(0,0,0,.2);
+	background-color:rgba(0,0,0,0);
+	box-shadow:0 0 10px 10px rgba(0,0,0,0);
 	transform:translatez(-30px);
-}
-
-.phone_inside:hover
-{
-	transform:scale(102%) rotatex(190deg) rotate(70deg) translatez(-200px);
-}
-
-.mail_inside:hover
-{
-	transform:scale(102%) rotate(-60deg) translatez(200px);
-}
-
-.phone_inside:active
-{
-	transform:scale(115%) translatey(400px) translatex(200px) translatez(1000px) rotatex(-40deg);
-}
-
-.mail_inside:active
-{
-	transform:scale(115%) translatey(400px) translatex(-100px) translatez(1000px) rotatex(-40deg);
 }
 
 .phone_front,.mail_front
@@ -607,7 +518,7 @@ nav
 
 .mail_front:hover:after
 {
-	transform:translatez(1px) translatex(0px) translatey(-201px) rotatex(90deg);
+	transform:translatez(1px) translatex(0px) translatey(-201px) rotatex(20deg);
 }
 
 .mail_front:active:after
@@ -798,70 +709,10 @@ nav
 		padding:10px 0px;
 	}
 	
-	
 	#block1
 	{
 		flex-direction:column;
-	}
-
-	.content1
-	{
-		text-align:center;
-		width:100%;
-		height:50%;
-		margin-top:120px;
-		animation:appear_right .2s linear;
-	}
-
-	.content1 > p:nth-child(1)
-	{
-		font-size:40px;
-		margin-top:0px;
-		margin-left:0px;
-		
-	}
-
-	.content1 > p:nth-child(1)::after
-	{
-		top:0px;
-		left:0px;
-		width:10px;
-		height:45px;
-	}
-
-	.content1 > p:nth-child(2)
-	{
-		font-size:30px;
-	}
-	.content_next_to1
-	{
-		width:100%;
-		height:100%;
-	}
-
-	.image
-	{
-		position:relative;
-		background-image:url(img/welding2.png);
-		background-size:cover;
-		background-position:center;
-		width:100%;
-		height:100%;
-	}
-
-	.image::after
-	{
-		content:"";
-		position:absolute;
-		top:550px;
-		left:230px;
-		background-color:white;
-		width:10px;
-		height:10px;
-		border-radius:100px;
-		box-shadow:0 0 300px 300px rgba(255,255,255);
-		animation:light_animation 0.01s;
-		animation-iteration-count:infinite;
+		margin-top:-100px;
 	}
 	
 	#block2
