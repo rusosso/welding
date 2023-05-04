@@ -1,25 +1,10 @@
-function block1_scroll_animation()
-{
-	if(window.innerHeight*1.3 <= window.scrollY)
-	{
-		document.getElementById("content1").style.transform="scale(200%)";
-		document.getElementById("block1").style.backgroundColor="white";
-		document.getElementById("block1_shadow").style.opacity="0";
-	}
-	else
-	{
-		document.getElementById("content1").style.transform="";
-		document.getElementById("block1").style.backgroundColor="";
-		document.getElementById("block1_shadow").style.opacity="";
-	}
-	
-	setTimeout("block1_scroll_animation()", 10);
-}
 
 
-function on_block2_change()
+
+
+function header_change()
 {
-	if(window.innerHeight*2 <= window.scrollY)
+	if(window.scrollY>=950)
 	{
 		document.getElementById("header").style.backgroundColor="var(--bg)";
 		document.getElementById("header").style.borderLeftColor="var(--font)";
@@ -29,6 +14,7 @@ function on_block2_change()
 		document.getElementById("nav_block2").style.color="var(--font)";
 		document.getElementById("nav_block1").style.borderBottomColor="var(--font)";
 		document.getElementById("nav_block2").style.borderBottomColor="solid var(--font)";
+		document.getElementById("block1").style.backgroundImage="url(img/bg.png)";
 	}
 	else
 	{
@@ -40,9 +26,11 @@ function on_block2_change()
 		document.getElementById("nav_block2").style.color="var(--bg)";
 		document.getElementById("nav_block1").style.borderBottomColor="var(--bg)";
 		document.getElementById("nav_block2").style.borderBottomColor="var(--bg)";
+		document.getElementById("block1").style.backgroundImage="url(img/bg.gif)";
+		
 	}
 	
-	setTimeout("on_block2_change()", 10);
+	setTimeout("header_change()", 10);
 }
 
 var display1_active=false;
@@ -141,8 +129,8 @@ function display3()
 
 function content3_scroll()
 {
-	//document.getElementById("seperate").innerHTML=window.scrollY+" "+window.innerHeight;
-	if(window.innerHeight*2.7 <= window.scrollY)
+	//document.getElementById("seperate").innerHTML=window.scrollY;
+	if(window.scrollY>1700)
 	{
 		document.getElementById("table").style.transform="rotate(-15deg) rotatex(35deg) translatey(200px)";
 	}
