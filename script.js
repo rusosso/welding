@@ -8,7 +8,6 @@ function block1_scroll_animation()
 	}
 	else
 	{
-		document.getElementById("content1").style.backgroundColor="";
 		document.getElementById("content1").style.transform="";
 		document.getElementById("block1").style.backgroundColor="";
 		document.getElementById("block1_shadow").style.opacity="";
