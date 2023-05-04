@@ -149,6 +149,11 @@ nav
 	margin-top:25vh;
 }
 
+.content1:nth-child(3)
+{
+	position:sticky;
+	top:25vh;
+}
 
 .blank_block
 {
