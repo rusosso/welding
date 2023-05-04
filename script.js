@@ -3,7 +3,7 @@ function block1_scroll_animation()
 	if(window.innerHeight*1.3 <= window.scrollY)
 	{
 		document.getElementById("content1").style.backgroundColor="white";
-		document.getElementById("content1").style.transform="scale(500%)";
+		document.getElementById("content1").style.transform="scale(200%)";
 		document.getElementById("block1").style.backgroundColor="white";
 		document.getElementById("block1_shadow").style.opacity="0";
 	}
