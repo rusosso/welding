@@ -1,17 +1,17 @@
 function block1_scroll_animation()
 {
-	if(window.innerHeight*1.3 <= window.scrollY)
+	if(window.innerHeight*2.2 <= window.scrollY)
 	{
 		document.getElementById("content1").style.transform="scale(200%)";
 		document.getElementById("block1").style.backgroundColor="white";
-		document.getElementById("block1_shadow").style.opacity="0";
+		document.getElementById("block1_cover").style.opacity="1";
 	}
 	else
 	{
 		document.getElementById("content1").style.backgroundColor="";
+		document.getElementById("block1_cover").style.opacity="";
 		document.getElementById("content1").style.transform="";
 		document.getElementById("block1").style.backgroundColor="";
-		document.getElementById("block1_shadow").style.opacity="";
 	}
 	
 	setTimeout("block1_scroll_animation()", 10);
@@ -20,7 +20,7 @@ function block1_scroll_animation()
 
 function on_block2_change()
 {
-	if(window.innerHeight*2 <= window.scrollY)
+	if(window.innerHeight*3.1 <= window.scrollY)
 	{
 		document.getElementById("header").style.backgroundColor="var(--bg)";
 		document.getElementById("header").style.borderLeftColor="var(--font)";
@@ -65,14 +65,13 @@ function display1()
 	}
 	else if(display1_active==true)
 	{
-		document.getElementById("photo1").style.transform="translate(0px, 0px) scale(100%) rotatey(-30deg) rotatex(-20deg)";
-		
+		document.getElementById("photo1").style.transform="";
 		document.getElementById("photo1").style.top="";
 		document.getElementById("photo1").style.left="";
 		document.getElementById("photo1").style.width="";
 		document.getElementById("photo1").style.height="";
-		document.getElementById("photo1").style.zIndex="1";
-		document.getElementById("photo1").style.boxShadow="0 50px 30px 30px rgba(0,0,0,.3)";
+		document.getElementById("photo1").style.zIndex="";
+		document.getElementById("photo1").style.boxShadow="";
 		document.getElementById("photo1").style.textAlign="center";
 		document.getElementById("photo1").style.fontSize="50px";
 		document.getElementById("photo1").innerHTML="<i class='demo-icon icon-ok-circled'></i>";
@@ -95,14 +94,14 @@ function display2()
 	}
 	else if(display2_active==true)
 	{
-		document.getElementById("photo2").style.transform="translate(0px, 0px) scale(100%) rotatey(-30deg) rotatex(-20deg)";
+		document.getElementById("photo2").style.transform="";
 		
 		document.getElementById("photo2").style.top="";
 		document.getElementById("photo2").style.left="";
 		document.getElementById("photo2").style.width="";
 		document.getElementById("photo2").style.height="";
-		document.getElementById("photo2").style.zIndex="1";
-		document.getElementById("photo2").style.boxShadow="0 50px 30px 30px rgba(0,0,0,.3)";
+		document.getElementById("photo2").style.zIndex="";
+		document.getElementById("photo2").style.boxShadow="";
 		document.getElementById("photo2").style.textAlign="center";
 		document.getElementById("photo2").style.fontSize="50px";
 		document.getElementById("photo2").innerHTML="<i class='demo-icon icon-ok-circled'></i>";
@@ -125,14 +124,13 @@ function display3()
 	}
 	else if(display3_active==true)
 	{
-		document.getElementById("photo3").style.transform="translate(0px, 0px) scale(100%) rotatey(-30deg) rotatex(-20deg)";
-		
+		document.getElementById("photo3").style.transform="";
 		document.getElementById("photo3").style.top="";
 		document.getElementById("photo3").style.left="";
 		document.getElementById("photo3").style.width="";
 		document.getElementById("photo3").style.height="";
-		document.getElementById("photo3").style.zIndex="1";
-		document.getElementById("photo3").style.boxShadow="0 50px 30px 30px rgba(0,0,0,.3)";
+		document.getElementById("photo3").style.zIndex="";
+		document.getElementById("photo3").style.boxShadow="";
 		document.getElementById("photo3").style.textAlign="center";
 		document.getElementById("photo3").style.fontSize="50px";
 		document.getElementById("photo3").innerHTML="<i class='demo-icon icon-ok-circled'></i>";
@@ -143,7 +141,7 @@ function display3()
 function content3_scroll()
 {
 	//document.getElementById("seperate").innerHTML=window.scrollY+" "+window.innerHeight;
-	if(window.innerHeight*2.5 <= window.scrollY)
+	if(window.innerHeight*5 <= window.scrollY)
 	{
 		document.getElementById("table").style.transform="rotatex(35deg) rotate(-90deg) translatex(-100px)";
 	}
