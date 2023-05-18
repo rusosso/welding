@@ -25,7 +25,6 @@ function header_change()
 		document.getElementById("header").style.backgroundColor="var(--bg)";
 		document.getElementById("header").style.borderLeftColor="var(--font)";
 		document.getElementById("logo").style.color="var(--font)";
-		document.getElementById("logo").style.backgroundImage="url(img/logo2.png)";
 		document.getElementById("nav_block1").style.color="var(--font)";
 		document.getElementById("nav_block2").style.color="var(--font)";
 		document.getElementById("nav_block1").style.borderBottomColor="var(--font)";
@@ -36,7 +35,6 @@ function header_change()
 		document.getElementById("header").style.backgroundColor="transparent";
 		document.getElementById("header").style.borderLeftColor="var(--bg)";
 		document.getElementById("logo").style.color="var(--bg)";
-		document.getElementById("logo").style.backgroundImage="url(img/logo1.png)";
 		document.getElementById("nav_block1").style.color="var(--bg)";
 		document.getElementById("nav_block2").style.color="var(--bg)";
 		document.getElementById("nav_block1").style.borderBottomColor="var(--bg)";

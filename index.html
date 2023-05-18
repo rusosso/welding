@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	<header id="header">
+	<header id="header" tabindex="0">
 		<a href="#" id="logo">
 		<p><span>Kornel</span> R</p>
 		</a>
@@ -37,9 +37,9 @@
 	<div id="block1_cover"></div>
 	<div id="block1">
 		<div id="block1_shadow"></div>
-		<div class="content1">Mam na imię Kornel Rosiński</div>
-		<div class="content1">moją pasją jest spawanie</div>
-		<div class="content1" id="content1">a pasja rodzi profesjonalizm </div>
+		<div class="content1" tabindex="0">Mam na imię Kornel Rosiński</div>
+		<div class="content1" tabindex="0">moją pasją jest spawanie</div>
+		<div class="content1" tabindex="0" id="content1">a pasja rodzi profesjonalizm </div>
 	</div>
 	
 	<script>
@@ -50,13 +50,13 @@
 	<div class="blank_block1" id="photos">
 	</div>
 	
-	<div id="block2">
+	<div id="block2" tabindex="0">
 		<div class="content_next_to2">
-			<div id="photo1" onclick="display1()">
+			<div id="photo1" onclick="display1()" tabindex="0">
 			</div>
-			<div id="photo2" onclick="display2()">
+			<div id="photo2" onclick="display2()" tabindex="0">
 			</div>
-			<div id="photo3" onclick="display3()">
+			<div id="photo3" onclick="display3()" tabindex="0">
 			</div>
 		</div>
 		
@@ -66,15 +66,15 @@
 		</div>
 	</div>
 
-	<div class="block3" id="contact">
+	<div class="block3" tabindex="0" id="contact">
 
 		<div class="content3">
 			<div class="message">
-					<div class="grid_item item1">a</div>
-					<div class="grid_item item2">b</div>
-					<div class="grid_item item3">c</div>
-					<div class="grid_item item4">d</div>
-					<div class="grid_item item5">e</div>
+					<div class="grid_item item1"><input type=text name="name" placeholder="Imię"></div>
+					<div class="grid_item item2"><input type=text name="surname" placeholder="Nazwisko"></div>
+					<div class="grid_item item3"><input type=text name="phone_num" placeholder="Numer Telefonu"></div>
+					<div class="grid_item item4"><input type=text name="email" placeholder="Adres Email"></div>
+					<div class="grid_item item5"><input type=text name="message" placeholder="Wiadomość"></div>
 			</div>
 		</div>
 
@@ -82,18 +82,13 @@
 			
 			<p>Kontakt</p>
 			
-			<div class="phone_inside">
-				<div class="phone_front">
+			<div class="card_container">
+				<div class="phone_card" tabindex="0">
+					<i class="demo-icon icon-phone"></i>
 				</div>
-				<div class="phone_back">
-				</div>
-				<div class="phone_right">
-				</div>
-				<div class="phone_left">
-				</div>
-				<div class="phone_top">
-				</div>
-				<div class="phone_bottom">
+
+				<div class="mail_card" tabindex="0">
+					<i class="demo-icon icon-mail-alt"></i>
 				</div>
 			</div>
 
