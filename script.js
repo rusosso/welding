@@ -135,3 +135,11 @@ function display3()
 		display3_active=false;
 	}
 }
+
+
+function TEST()
+{
+	document.getElementById("content3").style.transform="translate(100vw)"
+	document.getElementById("content_next_to3").style.transform="translate(100vw)"
+	document.getElementById("message").style.transform="translateX(0)"
+}
