@@ -47,22 +47,15 @@ header
 	font-size:5vw;
 	color:var(--font);
 	text-decoration:none;
-	width:600px;
+	width:20vw;
 	height:100%;
-	padding-left:70px;
 	animation:appear_right .2s linear;
 	transition:all 0.2s;
-	transform:translateX(-10vw)
 }
 
 #logo:hover
 {
 	background-color:rgba(255,255,255,.1);
-}
-
-#logo > p
-{
-	margin:0px;
 }
 
 #logo > p > span
@@ -77,7 +70,7 @@ nav
 
 #seperate
 {
-	width:0vw;
+	width:10vw;
 }
 
 #nav_block1,#nav_block2
@@ -201,7 +194,7 @@ nav
 .content2 > p:nth-child(1)
 {
 	position:relative;
-	font-size:100px;
+	font-size:5vw;
 	font-weight:700;
 	color:var(--font);
 	margin-top:150px;
@@ -212,12 +205,12 @@ nav
 .content2 > p:nth-child(1)::after
 {
 	content:"";
-	top:10px;
+	top:0;
 	right: 0px;
 	position:absolute;
 	background-color:var(--font);
-	width:40px;
-	height:100px;
+	width:1vh;
+	height:6vw;
 }
 
 .content2 > p:nth-child(2)
@@ -306,6 +299,16 @@ nav
 	height:100vh;
 }
 
+.content3 > p
+{
+	position:absolute;
+	top:0;
+	font-size:5vw;
+	font-weight:700;
+	color:white;
+	text-shadow:0 0 20px rgba(0,0,0,.5);
+}
+
 .message
 {
 	display: grid;
@@ -338,6 +341,7 @@ input
 	border:none;
 	border-radius:30px;
 	box-shadow:0 0 30px 30px rgba(0,0,0,.2);
+	transition:all 0.7s;
 }
 
 input:focus
@@ -350,7 +354,8 @@ input:focus
 .item2 { grid-area: 1 / 2 / 2 / 3;}
 .item3 { grid-area: 2 / 1 / 3 / 3;}
 .item4 { grid-area: 3 / 1 / 4 / 3;}
-.item5 { grid-area: 4 / 1 / 6 / 3;}
+.item5 { grid-area: 4 / 1 / 5 / 3;}
+.item6 { grid-area: 5 / 1 / 6 / 3;}
 
 
 .content_next_to3
@@ -364,7 +369,7 @@ input:focus
 
 .content_next_to3 > p
 {
-	font-size:100px;
+	font-size:5vw;
 	font-weight:700;
 	text-shadow:0 0 20px rgba(0,0,0,.2);
 }
@@ -374,8 +379,8 @@ input:focus
 	content:"";
 	right:0;
 	position:absolute;
-	height:110px;
-	width:50px;
+	width:1vh;
+	height:6vw;
 	background-color:var(--font);
 }
 
@@ -385,6 +390,7 @@ input:focus
 	justify-content:center;
 	transform-style:preserve-3d;
 	gap:10vw;
+	margin-top:15vh;
 	
 }
 
@@ -394,7 +400,7 @@ input:focus
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	font-size:100px;
+	font-size:5vw;
 	color:white;
 	background-color: var(--bg);
 	background-image: linear-gradient(120deg, var(--font) 0%, var(--bg) 100%);
@@ -526,31 +532,21 @@ input:focus
 {
 	header
 	{
-		position:sticky;
-		top:0px;
-		display:flex;
-		justify-content:center;
-		align-items: bottom;
+		gap:0;
 		height:100px;
 	}
 
 
 	#logo
 	{
-		background-size:0px;
 		font-size:40px;
-		width:300px;
-		padding-left:30px;
-	}
-
-	#logo > p
-	{
-		margin-left:5px;
+		width:400px;
+		
 	}
 
 	#seperate
 	{
-		width:0%;
+		width:0;
 	}
 
 	#nav_block1,#nav_block2
@@ -658,15 +654,106 @@ input:focus
 
 	.block3
 	{
-		position:sticky;
-		top:100px;
 		height:calc(100vh - 100px);
-		background-size:100%;
-		display:flex;
+		background: conic-gradient(from 90deg, var(--bg), var(--font));
+		background-size:100% 100%;
 		flex-direction:column;
-		justify-content:right;
-		margin-top:200px;
+	}
+	
+	.content3
+	{
+		width:100vw;
+		height:50%;
+	}
+	
+	.content3 > p
+	{
+		font-size:8vw;
 	}
 
+.message  /* zmienic */
+{
+	grid-template-columns: 40vw 40vw;
+	grid-template-rows: 4vh 4vh 4vh 4vh;
+	grid-column-gap: 2vw;
+	grid-row-gap: 3vh;
+}
+
+input
+{
+	font-size:4vw;
+}
+
+.content_next_to3
+{
+	width:100vw;
+	height:50%;
+}
+
+.content_next_to3 > p
+{
+	font-size:8vw;
+}
+
+.content_next_to3 > p::before
+{
+	height:9vw;
+}
+
+.card_container
+{
+	display:flex;
+	justify-content:center;
+	transform-style:preserve-3d;
+	gap:10vw;
+	margin-top:0;
+	
+}
+
+.phone_card,.mail_card
+{
+	position:relative;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:5vw;
+	color:white;
+	background-color: var(--bg);
+	background-image: linear-gradient(120deg, var(--font) 0%, var(--bg) 100%);
+	background-size: 180% 180%;
+	animation: gradient-animation 10s ease infinite;
+	height:25vh;
+	width:30vw;
+	border:5px solid white;
+	border-radius:30px;
+	transform:rotateX(60deg) rotate(30deg);
+	transform-style:preserve-3d;
+	transition:all 0.5s;
+}
+
+.phone_card:hover,.mail_card:hover
+{
+	transform:rotateX(60deg) rotate(30deg) rotateY(5deg) translateZ(15px);
+	cursor:pointer;
+}
+
+.phone_card:active,.mail_card:active
+{
+	transform:rotate(180deg) rotateZ(-90deg) rotateX(-180deg) scale(110%);
+}
+
+.phone_card::before,.mail_card::before
+{
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:rgba(0,0,0,.5);
+	height:25vh;
+	width:30vw;
+	filter:blur(30px);
+	transform:translateZ(-10px) translateY(50px);
+	transition:all 0.7s;
+}
 	
 }
