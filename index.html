@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>test</title>
+	<meta charset="utf8"/>
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="css/fontello.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+	<script src="script.js"	type="text/javascript"></script>
+
+</head>
+
+<body>
+	<header id="header" tabindex="0">
+		<a href="#" id="logo">
+		<p><span>Kornel</span> R</p>
+		</a>
+		
+		<div id="seperate">
+		</div>
+		
+		<nav>
+			<a href="#photos" id="nav_block1">
+				 <i class="demo-icon icon-picture"></i>Zdjęcia
+			</a>
+			<a href="#contact" id="nav_block2">
+				<i class="demo-icon icon-user"></i>Kontakt
+			</a>
+		</nav>
+	</header>
+	
+	<div id="block1_cover"></div>
+	<div id="block1">
+		<div id="block1_shadow"></div>
+		<div class="content1" tabindex="0">Mam na imię Kornel Rosiński</div>
+		<div class="content1" tabindex="0">moją pasją jest spawanie</div>
+		<div class="content1" tabindex="0" id="content1">a pasja rodzi profesjonalizm </div>
+	</div>
+	
+	<script>
+	block1_scroll_animation();
+	header_change();
+	</script>
+	
+	<div class="blank_block1" id="photos">
+	</div>
+	
+	<div id="block2" tabindex="0">
+		<div class="content_next_to2">
+			<div id="photo1" onclick="display1()" tabindex="0">
+			</div>
+			<div id="photo2" onclick="display2()" tabindex="0">
+			</div>
+			<div id="photo3" onclick="display3()" tabindex="0">
+			</div>
+		</div>
+		
+		<div class="content2">
+			<p>Zdjęcia</p>
+			<p>Są to niektóre ze zdjęć wykonanych w trakcie mojej pracy.</p>
+		</div>
+	</div>
+	
+	<div class="block3_bg" id="contact">
+	<form>
+	<div id="message">
+					<div class="grid_item item1"><input type="text" name="name" placeholder="Imię" required></div>
+					<div class="grid_item item2"><input type="text" name="surname" placeholder="Nazwisko" required></div>
+					<div class="grid_item item3"><input type="tel" name="phone_num" placeholder="Numer Telefonu" required></div>
+					<div class="grid_item item4"><input type="email" name="email" placeholder="Adres Email"></div>
+					<div class="grid_item item5"><textarea name="message" maxlength="300" placeholder="Wiadomość" required></textarea></div>
+					<div class="grid_item item6"><input type="submit" onclick="message_sent()"></div>
+	</div>
+	</form>
+	<div class="block3_back">
+	<p>Powrót</p>
+	<i class="demo-icon icon-left-circle" onclick="message_click()"></i>
+	</div>
+	<div id="block3" tabindex="0">
+		<div class="content3">
+			<p>Wyślij wiadomość</p>
+			<p>Możesz również wysłać wiadomość</p>
+			<i class="demo-icon icon-left-circle" onclick="message_click()"></i>
+
+		</div>
+
+		<div class="content_next_to3">	
+			
+			<p>Kontakt</p>
+			<div class="card_container">
+					<div class="phone_card" tabindex="0">
+						<i class="demo-icon icon-phone"></i>
+					</div>
+
+					<div class="mail_card" tabindex="0">
+						<i class="demo-icon icon-mail-alt"></i>
+					</div>
+			</div>
+		</div>
+		</div>
+</body>
+</html>
