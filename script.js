@@ -136,10 +136,18 @@ function display3()
 	}
 }
 
+var message_clicked=false
 
-function TEST()
+function message_click()
 {
-	document.getElementById("content3").style.transform="translate(100vw)"
-	document.getElementById("content_next_to3").style.transform="translate(100vw)"
-	document.getElementById("message").style.transform="translateX(0)"
+	if(message_clicked==false)
+	{
+	document.getElementById("block3").style.transform="translate(100vw)"
+	message_clicked=true;
+	}
+	else
+	{
+	document.getElementById("block3").style.transform=""
+	message_clicked=false;
+	}
 }

@@ -65,24 +65,29 @@
 			<p>Są to niektóre ze zdjęć wykonanych w trakcie mojej pracy.</p>
 		</div>
 	</div>
-
-	<div class="block3" tabindex="0" id="contact">
-
-		<div id="content3">
-			<p>Wyślij wiadomość</p>
-			<p>Możesz również wysłać wiadomość</p>	
-			<i class="demo-icon icon-left-circle" onclick="TEST()"></i>	
-			<div class="message">
+	
+	<div class="block3_bg" id="contact">
+	<div id="message">
 					<div class="grid_item item1"><input type="text" name="name" placeholder="Imię"></div>
 					<div class="grid_item item2"><input type="text" name="surname" placeholder="Nazwisko"></div>
-					<div class="grid_item item3"><input type="text" name="phone_num" placeholder="Numer Telefonu"></div>
-					<div class="grid_item item4"><input type="text" name="email" placeholder="Adres Email"></div>
+					<div class="grid_item item3"><input type="tel" name="phone_num" placeholder="Numer Telefonu"></div>
+					<div class="grid_item item4"><input type="email" name="email" placeholder="Adres Email"></div>
 					<div class="grid_item item5"><input type="text" name="message" placeholder="Wiadomość"></div>
 					<div class="grid_item item6"><input type="submit"></div>
 			</div>
+	<div id="block3_back">
+	<p>Powrót</p>
+	<i class="demo-icon icon-left-circle" onclick="message_click()"></i>
+	</div>
+	<div id="block3" tabindex="0">
+		<div class="content3">
+			<p>Wyślij wiadomość</p>
+			<p>Możesz również wysłać wiadomość</p>
+			<i class="demo-icon icon-left-circle" onclick="message_click()"></i>
+
 		</div>
 
-		<div id="content_next_to3">	
+		<div class="content_next_to3">	
 			
 			<p>Kontakt</p>
 			<div class="card_container">
@@ -94,8 +99,7 @@
 						<i class="demo-icon icon-mail-alt"></i>
 					</div>
 			</div>
-
-
+		</div>
 		</div>
 </body>
 </html>
