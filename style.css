@@ -367,7 +367,6 @@ nav
 	grid-row-gap: 5vh;
 	border-radius:10px;
 	box-sizing:border-box;
-	transition:all 0.7s;
 }
 
 .grid_item
