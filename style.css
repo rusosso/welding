@@ -858,7 +858,14 @@ input,textarea
 
 .phone_card::before,.mail_card::before
 {
-	height:25vh;
+	height:20vh;
 	width:30vw;
 }
+
+.phone_card::after,.mail_card::after
+{
+	font-size:1.8vh;
+}
+
+
 }
