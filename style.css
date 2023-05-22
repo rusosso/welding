@@ -309,7 +309,7 @@ nav
 	z-index:3;
 }
 
-#block3_back
+.block3_back
 {
 	position:absolute;
 	top:0;
@@ -321,7 +321,7 @@ nav
 	height:100%;
 }
 
-#block3_back > p:nth-child(1)
+.block3_back > p:nth-child(1)
 {
 	position:absolute;
 	top:0;
@@ -331,7 +331,7 @@ nav
 	text-shadow:0 0 20px rgba(0,0,0,.5);
 }
 
-#block3_back > i:nth-child(2)
+.block3_back > i:nth-child(2)
 {
 	position:absolute;
 	top:20vw;
@@ -342,14 +342,14 @@ nav
 	transition:all 0.7s;
 }
 
-#block3_back > i:nth-child(2):hover
+.block3_back > i:nth-child(2):hover
 {
 	cursor:pointer;
 	text-shadow:0 0 25px rgba(0,0,0,.3);
 	transform:rotate(180deg) scale(105%);
 }
 
-#block3_back > i:nth-child(2):active
+.block3_back > i:nth-child(2):active
 {
 	text-shadow:0 0 10px rgba(0,0,0,.8);
 	transform:rotate(180deg) scale(95%);
@@ -358,7 +358,7 @@ nav
 #message
 {
 	position:absolute;
-	top:0vh;
+	top:10vh;
 	left:5vw;
 	display: grid;
 	grid-template-columns: 30vw 30vw;
@@ -367,7 +367,6 @@ nav
 	grid-row-gap: 5vh;
 	border-radius:10px;
 	box-sizing:border-box;
-	margin-top:10vh;
 	transition:all 0.7s;
 }
 
@@ -633,7 +632,7 @@ input[type=submit]
 	}
 }
 
-@media (max-width: 700px)
+@media (max-width: 950px)
 {
 	header
 	{
@@ -644,7 +643,7 @@ input[type=submit]
 
 	#logo
 	{
-		font-size:40px;
+		font-size:10vw;
 		width:400px;
 		
 	}
@@ -770,9 +769,20 @@ input[type=submit]
 	
 	.block3_bg
 	{
-		top:100px;
+		top:10vh;
 		height:calc(100vh - 100px);
 	}
+
+	.block3_back > p
+	{
+		margin-top:-10vh;
+	}
+
+	.block3_back > i
+	{
+		margin-top:2.5vh;
+	}
+	
 	.content3
 	{
 		width:100vw;
@@ -787,7 +797,7 @@ input[type=submit]
 .content3 > p:nth-child(2)
 {
 	position:relative;
-	top:-5vh;
+	top:-2vh;
 	font-size:5vw;
 	color:white;
 	text-shadow:0 0 20px rgba(0,0,0,.5);
