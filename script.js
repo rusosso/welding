@@ -154,11 +154,12 @@ function message_click()
 
 function message_sent()
 {
-	document.getElementById("message").innerHTML="Pomyślnie wysłano wiadomość <i class='demo-icon icon-ok-circled'></i>"
-	document.getElementById("message").style.backgroundImage="linear-gradient(125deg, rgba(51,255,51,1) 30%, rgba(179,255,179,1) 70%)"
-	document.getElementById("message").style.display="block"
-	document.getElementById("message").style.fontSize="5vw"
-	document.getElementById("message").style.textAlign="center"
-	document.getElementById("message").style.marginTop="25vh"
-	document.getElementById("message").style.padding="1vw"
+	document.getElementById("block3_message").innerHTML="Pomyślnie wysłano wiadomość <i class='demo-icon icon-ok-circled'></i>"
+	document.getElementById("block3_message").style.backgroundImage="linear-gradient(125deg, rgba(51,255,51,1) 30%, rgba(179,255,179,1) 70%)"
+	document.getElementById("block3_message").style.width="62vw"
+	document.getElementById("block3_message").style.height="74vh"
+	document.getElementById("block3_message").style.display="block"
+	document.getElementById("block3_message").style.fontSize="6vw"
+	document.getElementById("block3_message").style.textAlign="center"
+	document.getElementById("block3_message").style.padding="10vw 0"
 }
