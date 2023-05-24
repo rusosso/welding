@@ -336,8 +336,8 @@ nav
 { 
 	grid-area: 2 / 1 / 6 / 2; 
 	display:flex;
-	justify-content:center;
 	align-items:start;
+	justify-content:center;
 }
 
 .div1 > p,.div2 > i 
@@ -792,10 +792,15 @@ input[type=submit]
 		top:10vh;
 		height:calc(100vh - 100px);
 	}
-
-	.block3_back > i
+	
+	.div1 > p
 	{
-		font-size:15vh;
+		font-size:5vw;
+	}
+
+	.div2 > i
+	{
+		font-size:12vw;
 	}
 	
 	.content3
