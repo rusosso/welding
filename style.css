@@ -26,7 +26,7 @@ header
 {
 	background-color:transparent;
 	position:sticky;
-	top:0px;
+	top:0;
 	display:flex;
 	justify-content:center;
 	align-items: bottom;
@@ -409,8 +409,8 @@ input,textarea
 textarea
 {
 	resize:none;
-	width:80%;
-	padding:0 10%;
+	width:96%;
+	padding:0 2%;
 }
 
 input:focus,textarea:focus
@@ -501,7 +501,7 @@ input[type=submit]
 .content_next_to3 > p::before
 {
 	content:"";
-	right:0;
+	right:1vw;
 	position:absolute;
 	width:1vh;
 	height:6vw;
@@ -547,7 +547,7 @@ input[type=submit]
 
 .phone_card:active,.mail_card:active
 {
-	transform:rotate(180deg) rotateZ(-90deg) rotateX(-180deg) scale(110%) translateX(-100px);
+	transform:rotate(180deg) rotateZ(-90deg) rotateX(-180deg) scale(110%) translateX(-8vh);
 }
 
 .phone_card::before,.mail_card::before
@@ -656,8 +656,7 @@ input[type=submit]
 {
 	header
 	{
-		gap:0;
-		height:100px;
+		height:80px;
 	}
 
 
@@ -676,7 +675,7 @@ input[type=submit]
 	#nav_block1,#nav_block2
 	{
 		width:70px;
-		font-size:25px;
+		font-size:3vh;
 		margin:0px 15px;
 		padding:10px 0px;
 	}
@@ -684,13 +683,13 @@ input[type=submit]
 	#block1
 	{
 		flex-direction:column;
-		margin-top:-100px;
+		margin-top:-80px;
 	}
 	
 	#block2
 	{
 		flex-direction:column-reverse;
-		top:100px;
+		top:80px;
 		justify-content:left;
 		gap:10%;
 		height:100vh;
@@ -780,8 +779,8 @@ input[type=submit]
 	
 	#block3
 	{
-		top:100px;
-		height:calc(100vh - 100px);
+		top:80px;
+		height:calc(100vh - 80px);
 		background: conic-gradient(from -90deg, var(--bg), var(--font));
 		background-size:100% 100%;
 		flex-direction:column-reverse;
@@ -789,8 +788,8 @@ input[type=submit]
 	
 	.block3_bg
 	{
-		top:10vh;
-		height:calc(100vh - 100px);
+		top:80px;
+		height:calc(100vh - 80px);
 	}
 	
 	.div1 > p
@@ -873,7 +872,7 @@ input[type=submit]
 
 	.phone_card:active,.mail_card:active
 	{
-		transform:rotate(180deg) rotateZ(-90deg) rotateX(-180deg) scale(110%) translateX(-50px);
+		transform:rotate(180deg) rotateZ(-90deg) rotateX(-180deg) scale(110%) translateX(-6vh);
 	}
 
 

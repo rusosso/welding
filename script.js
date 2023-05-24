@@ -151,15 +151,3 @@ function message_click()
 	message_clicked=false;
 	}
 }
-
-function message_sent()
-{
-	document.getElementById("block3_message").innerHTML="Pomyślnie wysłano wiadomość <i class='demo-icon icon-ok-circled'></i>"
-	document.getElementById("block3_message").style.backgroundImage="linear-gradient(125deg, rgba(51,255,51,1) 30%, rgba(179,255,179,1) 70%)"
-	document.getElementById("block3_message").style.width="62vw"
-	document.getElementById("block3_message").style.height="74vh"
-	document.getElementById("block3_message").style.display="block"
-	document.getElementById("block3_message").style.fontSize="6vw"
-	document.getElementById("block3_message").style.textAlign="center"
-	document.getElementById("block3_message").style.padding="10vw 0"
-}
