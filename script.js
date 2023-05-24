@@ -154,6 +154,18 @@ function message_click()
 
 function message_sent()
 {
+	const fs=required('fs');
+	const content = "chuj"
+	
+	fs.writeFile("messages.txt", content, err=> {
+		if(err)
+		{
+			console.err;
+			return;
+		}
+	});
+	
+	
 	document.getElementById("block3_message").innerHTML="Pomyślnie wysłano wiadomość <i class='demo-icon icon-ok-circled'></i>"
 	document.getElementById("block3_message").style.backgroundImage="linear-gradient(125deg, rgba(51,255,51,1) 30%, rgba(179,255,179,1) 70%)"
 	document.getElementById("block3_message").style.width="62vw"
