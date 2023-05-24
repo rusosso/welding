@@ -67,14 +67,16 @@
 	</div>
 	
 	<div class="block3_bg" id="contact">
+	<!--<form action="https://formspree.io/f/xayzzjbj" method="POST">-->
 	<div id="block3_message">
-					<div class="grid_item item1"><input type="text" id="name" placeholder="Imię" required></div>
-					<div class="grid_item item2"><input type="text" id="surname" placeholder="Nazwisko" required></div>
-					<div class="grid_item item3"><input type="tel" id="phone_num" placeholder="Numer Telefonu" required></div>
-					<div class="grid_item item4"><input type="email" id="email" placeholder="Adres Email"></div>
-					<div class="grid_item item5"><textarea id="messages" maxlength="300" placeholder="Wiadomość" required></textarea></div>
-					<div class="grid_item item6"><input type="submit" onclick="message_sent()"></div>
+					<div class="grid_item item1"><input type="text" name="name" placeholder="Imię" required></div>
+					<div class="grid_item item2"><input type="text" name="surname" placeholder="Nazwisko" required></div>
+					<div class="grid_item item3"><input type="tel" name="phone_num" placeholder="Numer Telefonu" required></div>
+					<div class="grid_item item4"><input type="email" name="email" placeholder="Adres Email"></div>
+					<div class="grid_item item5"><textarea name="messages" maxlength="300" placeholder="Wiadomość" required></textarea></div>
+					<div class="grid_item item6"><input type="submit" onsubmit="message_sent()"></div>
 	</div>
+	
 	<div class="block3_back">
 		<div class="div1"><p>Powrót</p> </div>
 		<div class="div2"><i class="demo-icon icon-left-circle" onclick="message_click()"></i> </div>
