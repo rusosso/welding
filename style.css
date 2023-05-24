@@ -461,6 +461,8 @@ input[type=submit]
 .content3 > i
 {
 	display:block;
+	width:14vw;
+	margin:auto;
 	font-size:10vw;
 	color:white;
 	text-shadow:0 0 20px rgba(0,0,0,.5);
