@@ -828,6 +828,7 @@ input[type=submit]
 	{
 		position:relative;
 		top:-2vh;
+		width:30vw;
 		font-size:20vw;
 		color:white;
 		text-shadow:0 0 20px rgba(0,0,0,.5);
