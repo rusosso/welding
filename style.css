@@ -854,6 +854,7 @@ input[type=submit]
 
 	.content_next_to3 > p::before
 	{
+		right:0;
 		height:9vw;
 	}
 
@@ -872,10 +873,15 @@ input[type=submit]
 		height:20vh;
 		width:30vw;
 	}
+	
+	.phone_card::after,.mail_card::after
+	{
+		transform:translateZ(-1px) rotateY(180deg) translateY(-0.6vh);
+	}
 
 	.phone_card:active,.mail_card:active
 	{
-		transform:rotate(180deg) rotateZ(-90deg) rotateX(-180deg) scale(110%) translateX(-6vh);
+		transform:rotate(180deg) rotateZ(-90deg) rotateX(-180deg) scale(110%) translateX(-7vh);
 	}
 
 
