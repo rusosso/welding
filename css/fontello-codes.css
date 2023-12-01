@@ -1,8 +1,2 @@
 
-.icon-user:before { content: '\e800'; } /* '' */
-.icon-picture:before { content: '\e801'; } /* '' */
-.icon-ok-circled:before { content: '\e802'; } /* '' */
-.icon-phone:before { content: '\e803'; } /* '' */
-.icon-location:before { content: '\e804'; } /* '' */
-.icon-left-circle:before { content: '\e805'; } /* '' */
-.icon-mail-alt:before { content: '\f0e0'; } /* '' */
+.icon-down-open:before { content: '\e800'; } /* '' */

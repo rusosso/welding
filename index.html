@@ -1,108 +1,112 @@
-<!DOCTYPE html>
-
-<html>
+<!DOCTYPE HTML>
 
 <head>
-	<title>Kornel Rosiński - Spawacz</title>
-	<meta charset="utf8"/>
-	<meta name="viewport" content="width=device-width initial-scale=1">
-	<link rel="icon" type="image/x-icon" href="favicon.png">
-	<link href="style.css" rel="stylesheet" type="text/css">
-	<link href="css/fontello.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<meta lang="PL-pl">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+	<script src="script.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
-	<script src="script.js"	type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<head>
 
-</head>
-
-<body>
-	<header id="header" tabindex="0">
-		<a href="#" id="logo">
-		<p><span>Kornel</span> R</p>
-		</a>
-		
-		<div id="seperate">
+<body id="body">
+	
+	<div class="introcontainer" id="introcontainer">
+	
+		<div class="introcontaineroverlay" id="introcontaineroverlay">
 		</div>
 		
-		<nav>
-			<a href="#photos" id="nav_block1">
-				 <i class="demo-icon icon-picture"></i>Zdjęcia
-			</a>
-			<a href="#contact" id="nav_block2">
-				<i class="demo-icon icon-user"></i>Kontakt
-			</a>
-		</nav>
-	</header>
-	
-	<div id="block1_cover"></div>
-	<div id="block1">
-		<div id="block1_shadow"></div>
-		<div class="content1" tabindex="0">Mam na imię Kornel Rosiński</div>
-		<div class="content1" tabindex="0">moją pasją jest spawanie</div>
-		<div class="content1" tabindex="0" id="content1">a pasja rodzi profesjonalizm </div>
-	</div>
-	
-	<script>
-	block1_scroll_animation();
-	header_change();
-	</script>
-	
-	<div class="blank_block1" id="photos">
-	</div>
-	
-	<div id="block2" tabindex="0">
-		<div class="content_next_to2">
-			<div id="photo1" onclick="display1()" tabindex="0">
-			</div>
-			<div id="photo2" onclick="display2()" tabindex="0">
-			</div>
-			<div id="photo3" onclick="display3()" tabindex="0">
-			</div>
-		</div>
-		
-		<div class="content2">
-			<p>Zdjęcia</p>
-			<p>Są to niektóre ze zdjęć wykonanych w trakcie mojej pracy.</p>
-		</div>
-	</div>
-	
-	<div class="block3_bg" id="contact">
-	<form action="https://formspree.io/f/xayzzjbj" method="POST">
-	<div id="block3_message">
-					<div class="grid_item item1"><input type="text" name="name" placeholder="Imię" required></div>
-					<div class="grid_item item2"><input type="text" name="surname" placeholder="Nazwisko" required></div>
-					<div class="grid_item item3"><input type="tel" name="phone_num" placeholder="Numer Telefonu" required></div>
-					<div class="grid_item item4"><input type="email" name="email" placeholder="Adres Email" required></div>
-					<div class="grid_item item5"><textarea name="messages" maxlength="244" placeholder="Wiadomość" required></textarea></div>
-					<div class="grid_item item6"><input type="submit"></div>
-	</div>
-	
-	<div class="block3_back">
-		<div class="div1"><p>Powrót</p> </div>
-		<div class="div2"><i class="demo-icon icon-left-circle" onclick="message_click()"></i> </div>
-	</div>
-	<div id="block3" tabindex="0">
-		<div class="content3">
-			<p>Wyślij wiadomość</p>
-			<p>Możesz również wysłać wiadomość</p>
-			<i class="demo-icon icon-left-circle" onclick="message_click()"></i>
-
-		</div>
-
-		<div class="content_next_to3">	
+		<div class="introgrid" id="introgrid">
 			
-			<p>Kontakt</p>
-			<div class="card_container">
-					<div class="phone_card" tabindex="0">
-						<i class="demo-icon icon-phone"></i>
-					</div>
-
-					<div class="mail_card" tabindex="0">
-						<i class="demo-icon icon-mail-alt"></i>
-					</div>
+			<div class="griddivlettersoverlay" id="griddivlettersoverlay">
+			</div>
+			
+			<div class="div1 griddiv">
+			
+				<div class="griddivletters">
+				K
+				</div>
+				
+				<div class="griddivletters">
+				W
+				</div>
+				
+			</div>
+			
+			<div class="div2 griddiv">
+				<div class="griddivletters griddivlettersdelay1">
+				O
+				</div>
+				
+				<div class="griddivletters griddivlettersdelay1">
+				E
+				</div>
+			</div>
+			
+			<div class="div3 griddiv">
+				<div class="griddivletters griddivlettersdelay2">
+				R
+				</div>
+				
+				<div class="griddivletters griddivlettersdelay2">
+				L
+				</div>
+			</div>
+			
+			<div class="div4 griddiv">
+				<div class="griddivletters griddivlettersdelay3">
+				N
+				</div>
+				
+				<div class="griddivletters griddivlettersdelay3">
+				D
+				</div>
+			</div>
+			
+			<div class="div5 griddiv">
+				<div class="griddivletters griddivlettersdelay4">
+				E
+				</div>
+				
+				<div class="griddivletters griddivlettersdelay4">
+				I
+				</div>
+			</div>
+			
+			<div class="div6 griddiv">
+				<div class="griddivletters griddivlettersdelay5">
+				L
+				</div>
+				
+				<div class="griddivletters griddivlettersdelay5">
+				N
+				</div>
+			</div>
+			
+			<div class="div7 griddiv">
+				<div class="griddivletters griddivlettersdelay6">
+				R
+				</div>
+				
+				<div class="griddivletters griddivlettersdelay6">
+				G
+				</div>
+			</div>
+			
+			<div class="div8" id="div8" onclick="intronext()">
+			DALEJ
 			</div>
 		</div>
+		
+		<div class="introarrow" id="introarrow">
+			<div class="arrow"></div>
 		</div>
-</body>
-</html>
+	</div>
+	
+	<div class="firstslide">
+		SAMPLE TEXT
+	</div>
+	
+<body>
